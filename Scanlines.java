@@ -1,4 +1,3 @@
-import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
 public class Scanlines{
     public static void main (String [] args){
