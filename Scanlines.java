@@ -12,7 +12,8 @@ public class Scanlines{
         String quote = scan.next();
         //System.out.println(quote); // Here only first word is printed because scan.next() will only take in till first space
         //we shall add
-        quote = quote + scan.nextLine(); //will print till enter is hit
+        // quote = quote + scan.nextLine(); //will print till enter is hit
+        quote += scan.nextLine();
         System.out.println(quote);
     }
 }
