@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 // class Student
 // {
 //     public int roll_no;
@@ -21,17 +21,54 @@ import java.util.Scanner;
 //         }
 
 //     }
-// }
-public class array{
-    public static void main(String[] args){
-        int n;
-        int[] arr =  new int[10];
-        Scanner scan = new Scanner(System.in);
-        n=scan.nextInt();
-        for (int i=0; i< n; i++){
+// // }
+// public class array{
+//     public static void main(String[] args){
+//         int n;
+//         int[] arr =  new int[10];
+//         Scanner scan = new Scanner(System.in);
+//         n=scan.nextInt();
+//         for (int i=0; i< n; i++){
            
-             arr[i]= scanner.nextInt();
-        }
+//              arr[i]= scanner.nextInt();
+//         }
 
+//     }
+// }
+
+
+import java.util.Scanner;
+public class array{
+  public static void main(String[] args) {
+
+    // Scanner class object to read input
+    Scanner scan = new Scanner(System.in);
+
+    // declaring and creating array objects
+    int[] arr = new int[5];
+
+    // displaying default values
+    System.out.println("Default values of array:");
+    for (int i=0; i < arr.length; i++) {
+      System.out.print(arr[i]+"\t");
     }
+
+    // initializing array
+    System.out.println("\n\n***Initializing Array***");
+    System.out.println("Enter "+ arr.length
+                     + " integer values:");
+
+    for(int i=0; i < arr.length; i++) {
+      // read input
+      arr[i] = scan.nextInt();
+    }
+    System.out.println("***Initialization completed***\n");
+
+    //displaying initialized values
+    System.out.println("Array elements are:");
+    for (int i=0; i < arr.length; i++) {
+      System.out.print(arr[i]+"\t");
+    }
+
+  }
 }
